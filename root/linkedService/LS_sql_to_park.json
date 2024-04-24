@@ -1,0 +1,17 @@
+{
+	"name": "LS_sql_to_park",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=LAPTOP-QL9VQEA3;initial catalog=salesEcom",
+			"userName": "Rondy Thomas K",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlZjMzNDRhZi1hNmU0LTQ2YTMtYWYzNi01Yzc1ZjZiOTU1MWMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SHintegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
