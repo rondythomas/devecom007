@@ -1,0 +1,19 @@
+{
+	"name": "DS_sql_to_park_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_sql_to_park_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "order"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
