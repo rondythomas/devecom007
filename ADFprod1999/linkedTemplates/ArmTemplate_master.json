@@ -20,11 +20,23 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_sql_to_park_sink'"
 		},
+		"LS_restAPI_to_park_sink_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_restAPI_to_park_sink'"
+		},
 		"LS_sql_to_park_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Rondy Thomas K"
 		},
 		"LS_sql_to_park_sink_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevcom007.dfs.core.windows.net/"
+		},
+		"LS_restAPI_to_park_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/oC5U82/data"
+		},
+		"LS_restAPI_to_park_sink_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssidevcom007.dfs.core.windows.net/"
 		},
@@ -58,6 +70,9 @@
 					"LS_sql_to_park_sink_accountKey": {
 						"value": "[parameters('LS_sql_to_park_sink_accountKey')]"
 					},
+					"LS_restAPI_to_park_sink_accountKey": {
+						"value": "[parameters('LS_restAPI_to_park_sink_accountKey')]"
+					},
 					"LS_sql_to_park_connectionString": {
 						"value": "[parameters('LS_sql_to_park_connectionString')]"
 					},
@@ -66,6 +81,12 @@
 					},
 					"LS_sql_to_park_sink_properties_typeProperties_url": {
 						"value": "[parameters('LS_sql_to_park_sink_properties_typeProperties_url')]"
+					},
+					"LS_restAPI_to_park_properties_typeProperties_url": {
+						"value": "[parameters('LS_restAPI_to_park_properties_typeProperties_url')]"
+					},
+					"LS_restAPI_to_park_sink_properties_typeProperties_url": {
+						"value": "[parameters('LS_restAPI_to_park_sink_properties_typeProperties_url')]"
 					},
 					"LS_sql_to_park_properties_typeProperties_userName": {
 						"value": "[parameters('LS_sql_to_park_properties_typeProperties_userName')]"

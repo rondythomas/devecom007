@@ -14,10 +14,19 @@
 		"LS_sql_to_park_sink_accountKey": {
 			"value": ""
 		},
+		"LS_restAPI_to_park_sink_accountKey": {
+			"value": ""
+		},
 		"LS_sql_to_park_properties_typeProperties_userName": {
 			"value": "Rondy Thomas K"
 		},
 		"LS_sql_to_park_sink_properties_typeProperties_url": {
+			"value": "https://adlssidevcom007.dfs.core.windows.net/"
+		},
+		"LS_restAPI_to_park_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/oC5U82/data"
+		},
+		"LS_restAPI_to_park_sink_properties_typeProperties_url": {
 			"value": "https://adlssidevcom007.dfs.core.windows.net/"
 		},
 		"containerUri": {
