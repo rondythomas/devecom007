@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFprod1999"
+		},
+		"LS_sql_to_park_connectionString": {
+			"value": "Integrated Security=True;Data Source=LAPTOP-QL9VQEA3;Initial Catalog=salesEcom"
+		},
+		"LS_sql_to_park_password": {
+			"value": ""
+		},
+		"LS_sql_to_park_sink_accountKey": {
+			"value": ""
+		},
+		"LS_sql_to_park_properties_typeProperties_userName": {
+			"value": "Rondy Thomas K"
+		},
+		"LS_sql_to_park_sink_properties_typeProperties_url": {
+			"value": "https://adlssidevcom007.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
