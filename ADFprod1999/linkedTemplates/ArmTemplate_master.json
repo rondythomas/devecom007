@@ -7,6 +7,18 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADFprod1999"
 		},
+		"LS_Manualfile_to_park_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_Manualfile_to_park'"
+		},
+		"LS__Manualfile_to_park_sink_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS__Manualfile_to_park_sink'"
+		},
+		"LS_restAPI_to_park_sink_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_restAPI_to_park_sink'"
+		},
 		"LS_sql_to_park_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_sql_to_park'",
@@ -20,15 +32,11 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_sql_to_park_sink'"
 		},
-		"LS_restAPI_to_park_sink_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_restAPI_to_park_sink'"
-		},
-		"LS_sql_to_park_properties_typeProperties_userName": {
+		"LS_Manualfile_to_park_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "Rondy Thomas K"
+			"defaultValue": "https://adlsrawecom007.dfs.core.windows.net/"
 		},
-		"LS_sql_to_park_sink_properties_typeProperties_url": {
+		"LS__Manualfile_to_park_sink_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssidevcom007.dfs.core.windows.net/"
 		},
@@ -39,6 +47,18 @@
 		"LS_restAPI_to_park_sink_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlssidevcom007.dfs.core.windows.net/"
+		},
+		"LS_sql_to_park_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Rondy Thomas K"
+		},
+		"LS_sql_to_park_sink_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidevcom007.dfs.core.windows.net/"
+		},
+		"EVNT_manualfile_ingestion_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/c519c65d-2e8e-4cc9-ac75-35f8340b47b2/resourceGroups/DEV/providers/Microsoft.Storage/storageAccounts/adlsrawecom007"
 		},
 		"containerUri": {
 			"type": "string",
@@ -67,11 +87,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"LS_sql_to_park_sink_accountKey": {
-						"value": "[parameters('LS_sql_to_park_sink_accountKey')]"
+					"LS_Manualfile_to_park_accountKey": {
+						"value": "[parameters('LS_Manualfile_to_park_accountKey')]"
+					},
+					"LS__Manualfile_to_park_sink_accountKey": {
+						"value": "[parameters('LS__Manualfile_to_park_sink_accountKey')]"
 					},
 					"LS_restAPI_to_park_sink_accountKey": {
 						"value": "[parameters('LS_restAPI_to_park_sink_accountKey')]"
+					},
+					"LS_sql_to_park_sink_accountKey": {
+						"value": "[parameters('LS_sql_to_park_sink_accountKey')]"
 					},
 					"LS_sql_to_park_connectionString": {
 						"value": "[parameters('LS_sql_to_park_connectionString')]"
@@ -79,8 +105,11 @@
 					"LS_sql_to_park_password": {
 						"value": "[parameters('LS_sql_to_park_password')]"
 					},
-					"LS_sql_to_park_sink_properties_typeProperties_url": {
-						"value": "[parameters('LS_sql_to_park_sink_properties_typeProperties_url')]"
+					"LS_Manualfile_to_park_properties_typeProperties_url": {
+						"value": "[parameters('LS_Manualfile_to_park_properties_typeProperties_url')]"
+					},
+					"LS__Manualfile_to_park_sink_properties_typeProperties_url": {
+						"value": "[parameters('LS__Manualfile_to_park_sink_properties_typeProperties_url')]"
 					},
 					"LS_restAPI_to_park_properties_typeProperties_url": {
 						"value": "[parameters('LS_restAPI_to_park_properties_typeProperties_url')]"
@@ -88,8 +117,14 @@
 					"LS_restAPI_to_park_sink_properties_typeProperties_url": {
 						"value": "[parameters('LS_restAPI_to_park_sink_properties_typeProperties_url')]"
 					},
+					"LS_sql_to_park_sink_properties_typeProperties_url": {
+						"value": "[parameters('LS_sql_to_park_sink_properties_typeProperties_url')]"
+					},
 					"LS_sql_to_park_properties_typeProperties_userName": {
 						"value": "[parameters('LS_sql_to_park_properties_typeProperties_userName')]"
+					},
+					"EVNT_manualfile_ingestion_properties_typeProperties_scope": {
+						"value": "[parameters('EVNT_manualfile_ingestion_properties_typeProperties_scope')]"
 					}
 				}
 			},
