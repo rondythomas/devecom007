@@ -1,0 +1,24 @@
+{
+	"name": "sch_rest_to_park",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_restAPI_to_park",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-04-24T23:00:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

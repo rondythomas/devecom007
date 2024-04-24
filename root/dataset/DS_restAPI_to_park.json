@@ -1,0 +1,12 @@
+{
+	"name": "DS_restAPI_to_park",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_restAPI_to_park",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
