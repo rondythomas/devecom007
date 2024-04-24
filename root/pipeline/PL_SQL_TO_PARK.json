@@ -32,6 +32,92 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "order_id",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_id",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "customer_id",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "customer_id",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "order_status",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_status",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "order_purchase_timestamp",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_purchase_timestamp",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "order_approved_at",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_approved_at",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "order_delivered_timestamp",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_delivered_timestamp",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "order_estimated_delivery_date",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "order_estimated_delivery_date",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
