@@ -1,0 +1,19 @@
+{
+	"name": "DS__Manualfile_to_park_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS__Manualfile_to_park_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "payment"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
